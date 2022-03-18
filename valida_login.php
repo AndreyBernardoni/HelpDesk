@@ -18,6 +18,7 @@
     if ($autenticado) {
         echo 'Usuário autenticado';
         $_SESSION['auth'] = true;
+        header('Location: home.php');
     } else {
         header('Location: index.php?login=erro');
         $_SESSION['auth'] = false;
