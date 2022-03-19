@@ -1,5 +1,16 @@
 <?php require_once "auth.php" ?>
 
+<?php
+
+  $db = fopen("db.txt", "r");
+
+  while (feof($db) == false) {
+    $register = fgets($db);
+    echo $register;
+  }
+
+?>
+
 <html>
 
 <head>
